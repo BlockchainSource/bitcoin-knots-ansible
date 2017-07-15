@@ -1,8 +1,12 @@
-Bitcoin Core
+Bitcoin Knots
 =========
 
-Ansible Rule for installing the latest Bitcoin Core release using the Ubuntu PPA.
-Only works on Ubuntu. Installs a systemd service to auto-restart Bitcoin Core.
+Ansible Rule for installing the latest Bitcoin Knots release using the Ubuntu PPA.
+Only works on Ubuntu. Installs a systemd service to auto-restart Bitcoin Knots.
+
+
+You can learn more about Bitcoin Knots here: https://bitcoinknots.org/
+
 
 Requirements
 ------------
@@ -25,7 +29,7 @@ Example Playbook
 
     - hosts: nodes
       roles:
-         - { role: lclc.bitcoin-core, bitcoinConfigFile: bitcoin.conf }
+         - { role: lclc.bitcoin-knots, bitcoinConfigFile: bitcoin.conf }
 
 License
 -------

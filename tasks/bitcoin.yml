@@ -1,8 +1,8 @@
-- name: Add bitcoin PPA
+- name: Add bitcoin knots PPA
   apt_repository:
-    repo='ppa:bitcoin/bitcoin'
+    repo='ppa:luke-jr/bitcoinknots'
 
-- name: Install bitcoin-core package
+- name: Install bitcoin-knots package
   apt:
     name: bitcoind
     state: latest
